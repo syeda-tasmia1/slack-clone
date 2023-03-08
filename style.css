@@ -1,10 +1,349 @@
-#topnav{
+/* Write all your CSS here */
+
+/* Please indent properly */
+
+/* Please use only lower-case letters */
+
+/* Your webpage should be 100% responsive!!! */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    display: flex;
+}
+
+main {
     display: flex;
     flex: 2;
-    flex-grow: 2;
-    flex-shrink: 1;
-    flex-basis: 0%;
-    max-width: 732px;
-    min-width: 0;
-    position: relative;
+}
+
+aside {
+    background: #3f0e40;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 220px;
+    cursor: pointer;
+}
+
+#name {
+    display: flex;
+    flex-direction: column;
+    padding: 14px;
+    position: sticky;
+    top: 0;
+    background-color: #3f0e40;
+}
+
+#name:hover {
+    cursor: pointer;
+    background-color: #350d36;
+}
+
+#name div:first-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+#name div:first-child span:first-child {
+    font-size: 1rem;
+    font-weight: 900;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+#name div:first-child span:first-child i {
+    color: #aa95ab;
+    font-size: 10px;
+}
+
+#name:hover div:first-child span:first-child i, #name:hover div:last-child span {
+    color: white;
+}
+
+#name div:first-child span:last-child i {
+    color: #aa95ab;
+    font-size: 20px;
+}
+
+#name div:first-child span:last-child i:hover {
+    color: white;
+}
+
+#name div:last-child i {
+    color: #38928a;
+    font-size: 10px;
+    padding-right: 5px;
+}
+
+#name div:last-child span {
+    color: #aa95ab;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+#button {
+    height: 52px;
+}
+
+#jump {
+    color: #aa95ab;
+    font-family: 'Noto Sans JP', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    width: 192px;
+    margin-top: 5px;
+    margin-left: 14px;
+    margin-right: 14px;
+    top: 16px;
+    background: #260027;
+    border: transparent;
+    padding: 5px 8px;
+    border-radius: 4px;
+}
+
+#jump span {
+    display: none;
+}
+
+#jump:hover {
+    background-color: #1c001d;
+}
+
+#jump:hover span {
+    display: inline-block;
+}
+
+#thr {
+    color: #aa95ab;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 15px;
+    padding: 5px 14px;
+}
+
+#thr:hover {
+    background: #350D36;
+}
+
+#thr i {
+    font-size: 13px;
+}
+
+.cha {
+    color: #aa95ab;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.cha-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+}
+
+.cha-name:hover span {
+    color: white;
+}
+
+.cha-items {
+    padding: 3px 14px;
+    font-size: 14px;
+}
+
+.cha-items i {
+    font-size: 12px;
+}
+
+.cha-items:hover {
+    background-color: #350D36;
+}
+
+.cha-items:active {
+    background: #1164a3;
+    color: white;
+}
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    height: 70px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+#cha-name {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+#cha-name h2 {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 18px;
+    margin: 10px 0 8px 0;
+}
+
+#cha-name #star {
+    font-size: 13px;
+    color: #656465;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+#cha-name #star span:nth-child(1):hover {
+    color: #f2c849;
+    cursor: pointer;
+}
+
+#cha-name #star span:nth-child(2):hover, #cha-name #star span:nth-child(3):hover {
+    color: #2671aa;
+    cursor: pointer;
+}
+
+#cha-name #star span {
+    border-right: 1px solid #656465;
+    padding: 0 5px;
+    margin-bottom: 2px;
+}
+
+#cha-name #star span:last-child {
+    border-right: 0px solid #656465;
+}
+
+#hed-last {
+    display: flex;
+    align-items: center;
+}
+
+#hed-last span {
+    margin: 8px;
+    font-size: 18px;
+}
+
+#hed-last span:nth-child(2):hover, #hed-last span:nth-child(3):hover, #hed-last span:nth-child(7):hover {
+    color: #1164a3;
+    cursor: pointer;
+}
+
+#hed-last button:hover, #hed-last button:hover i {
+    color: #1164a3;
+}
+
+#hed-last span:nth-child(5):hover {
+    color: red;
+    cursor: pointer;
+}
+
+#hed-last span:nth-child(6):hover {
+    color: #f2c849;
+    cursor: pointer;
+}
+
+#hed-last button {
+    color: #aa95ab;
+    background: transparent;
+    font-family: 'Noto Sans JP', sans-serif;
+    display: flex;
+    align-items: center;
+    width: 192px;
+    margin-top: 5px;
+    margin-left: 14px;
+    margin-right: 14px;
+    top: 16px;
+    border: 1px solid #868686;
+    padding: 5px 8px;
+    border-radius: 4px;
+}
+
+#hed-last button i {
+    margin: 0 5px;
+    color: black;
+}
+
+/* header */
+
+/* footer */
+
+footer {
+    display: flex;
+    background-color: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+footer button:first-child {
+    background: #fff;
+    border: 2px solid #616061;
+    color: #616061;
+    font-size: 18px;
+    margin-left: 20px;
+    border-right: 0px;
+    border-radius: 5px 0 0 5px;
+    height: 50px;
+    width: 50px;
+}
+
+footer button:first-child:hover {
+    color: white;
+    background-color: #56b68b;
+}
+
+footer input {
+    background: #fff;
+    border: 2px solid #616061;
+    color: #616061;
+    font-size: 15px;
+    border-right: 0px;
+    padding-left: 8px;
+    height: 44px;
+    width: 70%;
+}
+
+footer button:last-child {
+    background: #fff;
+    border: 2px solid #616061;
+    color: #616061;
+    font-size: 18px;
+    border-left: 0px;
+    border-radius: 0px 5px 5px 0px;
+    height: 50px;
+    margin-right: 20px;
+    width: 70px;
+}
+footer button:last-child i:first-child:hover{
+    color: #1164a3;
+    cursor: pointer;
+}
+footer button:last-child i:last-child:hover{
+    color: #f2c849;
+    cursor: pointer;
+}
+
+footer button:last-child i {
+    margin: 0 5px;
+}
+
+/* footer */
+
+a {
+    text-decoration: none;
+    color: #aa95ab;
+}
+
+.green {
+    color: #38928a;
+}
+
+.space {
+    height: 18px;
 }
